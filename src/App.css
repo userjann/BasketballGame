@@ -1,102 +1,78 @@
 /* App.css */
 
-/* Container für das gesamte Spiel */
+/* Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .game-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  margin-top: 50px;
 }
 
-/* Container für die Teams und das Spielbild */
 .team-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 80%;
   margin-bottom: 20px;
 }
 
-/* Container für die Team-Informationen */
 .team-info {
   text-align: center;
 }
 
-/* Stil für den Namen der Teams */
 .team-name {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-/* Stil für den Fortschrittsbalken */
 .progress-bar {
   width: 150px;
-  height: 20px;
-  margin-bottom: 10px;
 }
 
-/* Stil für den Basketball */
-.basketball-image {
-  width: 150px; /* Größe des Bildes erhöhen */
-  height: 150px; /* Größe des Bildes erhöhen */
-}
-
-/* Stil für die Wurf-Buttons */
-.throw-button {
-  padding: 8px 16px; /* Kleinere Polsterung */
-  font-size: 14px; /* Kleinere Schriftgröße */
-  background-color: #4CAF50;
-  color: white;
+.throw-button, .clear-button {
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
-  outline: none;
 }
 
-/* Deaktivierter Zustand für den Wurf-Button */
-.throw-button:disabled {
+.throw-button:disabled, .clear-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
-/* Container für die Anzeige der Punktzahlen */
+.basketball-image {
+  width: 200px;
+}
+
 .score-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 200px;
   margin-bottom: 20px;
 }
 
-/* Stil für die Anzeige der Punktzahlen */
 .score {
-  font-size: 40px;
-  margin: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Stil für den Löschen-Button */
-.clear-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 20px;
-}
-
-/* Stil für die Historie-Liste */
 .history {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
-/* Stil für die Elemente der Historie-Liste */
 .history li {
-  font-size: 16px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
 }
+

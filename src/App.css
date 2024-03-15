@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container für das gesamte Spiel */
+.game-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Container für die Teams und das Spielbild */
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Container für die Team-Informationen */
+.team-info {
+  text-align: center;
+}
+
+/* Stil für den Namen der Teams */
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Stil für den Fortschrittsbalken */
+.progress-bar {
+  width: 150px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+/* Stil für den Basketball */
+.basketball-image {
+  width: 150px; /* Größe des Bildes erhöhen */
+  height: 150px; /* Größe des Bildes erhöhen */
+}
+
+/* Stil für die Wurf-Buttons */
+.throw-button {
+  padding: 8px 16px; /* Kleinere Polsterung */
+  font-size: 14px; /* Kleinere Schriftgröße */
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* Deaktivierter Zustand für den Wurf-Button */
+.throw-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container für die Anzeige der Punktzahlen */
+.score-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Stil für die Anzeige der Punktzahlen */
+.score {
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+/* Stil für den Löschen-Button */
+.clear-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Stil für die Historie-Liste */
+.history {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stil für die Elemente der Historie-Liste */
+.history li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
